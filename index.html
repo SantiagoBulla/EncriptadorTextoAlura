@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Encriptador de texto</title>
+</head>
+
+<body>
+    <main>
+        <section class="interaction">
+            <div class="title">
+                <h1>
+                    <img src="./img//Logo.png">
+                </h1>
+            </div>
+
+            <div class="input">
+                <Textarea placeholder="Ingrese el texto aqui" id="user-text"></Textarea>
+            </div>
+
+            <div class="buttons">
+                <div class="buttons-container">
+                    <div class="warning-text">
+                        <img id="vector" src="./img/Vector.png">
+                        <p>Solo letras minúsculas y sin acentos</p>
+                    </div>
+                    <div class="action-buttons">
+                        <a id="button-encriptar" onclick="encriptar()">Encriptar</a>
+                        <a id="button-desencriptar" onclick="desencriptar()">Desencriptar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="visualization">
+            <div class="showData">
+                <div class="noText">
+                    <img id="muñeco" src="./img/Muñeco.png">
+                    <h2>Ningún mensaje fue encontrado</h2>
+                    <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+                </div>
+                <div class="text">
+                </div>
+                <button id="button-copy" onclick="copiarTexto()">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© copyright 2024 - David Santiago Bulla Perez</p>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+
+</html>
